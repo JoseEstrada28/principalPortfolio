@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+/*begins Header*/
+.responsive__icono {
+  width: 2rem;
+  height: 2rem; }
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  justify-content: space-around; }
+
+.vacio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  padding-left: 0px; }
+
+.header__logo {
+  color: white;
+  font-size: 30px;
+  font-family: 13px;
+  display: flex;
+  flex-wrap: 2; }
+  .header__logo--icono {
+    padding-right: 5px;
+    width: 4rem;
+    height: 4rem; }
+
+#btn-menu {
+  display: none; }
+
+header .label__menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 30px; }
+
+header .label__menu:hover {
+  cursor: pointer; }
+
+.header__menu .header__lista {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; }
+
+.header__menu .header__lista .header__lista--item:hover a {
+  border-bottom: 3px solid yellow; }
+
+.header__menu .header__lista .header__lista--item:hover a {
+  padding-bottom: 5px; }
+
+.header__menu .header__lista--item a {
+  display: block;
+  padding: 20px;
+  color: #4b5d72;
+  text-decoration: none;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    justify-content: flex-start; }
+  header .label__menu {
+    display: block; }
+  .vacio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    padding-left: 0px;
+    margin-top: 9px; }
+  .header__menu {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    margin-top: 260px;
+    margin-left: -200%;
+    transition: all 0.5s; }
+  .header__menu .header__lista {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start; }
+  .header__menu .header__lista--item a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center; }
+  .header__menu .header__lista--item {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white; }
+  .header__lista--alter {
+    border-top: 1px solid white; }
+  #btn-menu:checked ~ .header__menu {
+    margin: 0;
+    margin-top: 260px; } }
